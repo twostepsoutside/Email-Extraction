@@ -7,9 +7,9 @@ public class Main {
         int counter = 0;
         Path emailFile = Path.of("sample.txt");
         String contentOfFile = Files.readString(emailFile);
-        for(int i = 0; i < contentOfFile.length()-12; i++)
+        for(int i = 0; i < contentOfFile.length()-13; i++)
         {
-            if ("@softwire.com".equals(contentOfFile.substring(i, 13))) {counter ++;}
+            if ("@softwire.com".equals(contentOfFile.substring(i, i+13))) {counter ++;}
         }
         System.out.println(counter);
     }
