@@ -7,7 +7,6 @@ import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        int counter = 0;
         Path emailFile = Path.of("sample.txt");
         String contentOfFile = Files.readString(emailFile);
         HashMap<String, Integer> adresses = new HashMap<>();
